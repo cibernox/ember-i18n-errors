@@ -3,7 +3,7 @@
 This addon leverages [ember-i18n](https://github.com/jamesarosen/ember-i18n) but for the specific 
 purpose of localize error messages. 
 
-It adds to your app a handy helper `{{t-helper error}}` for translating errors in the context of
+It adds to your app a handy helper `{{t-error error}}` for translating errors in the context of
 the current route but taking advantage of route nesting to lookup translationa in fallback in parent
 routes.
 
