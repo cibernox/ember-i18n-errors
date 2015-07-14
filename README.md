@@ -4,8 +4,8 @@ This addon leverages [ember-i18n](https://github.com/jamesarosen/ember-i18n) but
 purpose of localize error messages. 
 
 It adds to your app a handy helper `{{t-error error}}` for translating errors in the context of
-the current route but taking advantage of route nesting to lookup translationa in fallback in parent
-routes.
+the current route, but also takes advantage of Ember's route nesting to lookup translations in fallback on 
+parent routes.
 
 
 ## Installation
@@ -45,6 +45,6 @@ errors.email.invalid
 errors.invalid
 ```
 
-If none of those keys is defined in your translations the missing translation will point to the most
+If none of those keys is defined in your translations the missing translation message will point you to the most
 specific translation: `Missing translation: parent.child.grandchild.errors.email.invalid`.
 
