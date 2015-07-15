@@ -26,7 +26,6 @@ export default Helper.extend({
   compute([error]) {
     const routeName = this.get('appController').currentRouteName;
     const keys = generateKeys(routeName, error);
-    console.log('keys:', keys);
     return this.get('i18n').t(keys.shift(), { default: keys });
   }
 });
