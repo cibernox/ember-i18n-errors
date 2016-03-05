@@ -1,6 +1,6 @@
 {
   "name": "ember-i18n-errors",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "Extension to ember-i18n to translate error messages within the route hierarchy",
   "directories": {
     "doc": "doc",
