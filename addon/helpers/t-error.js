@@ -1,6 +1,6 @@
 import Ember from 'ember';
 
-const { computed, inject, Helper } = Ember;
+const { computed, inject, getOwner, Helper } = Ember;
 
 export function generateKeys(routeName, { attribute, message }) {
   const routeSegments = routeName.split('.');
@@ -20,7 +20,7 @@ export default Helper.extend({
   i18n: inject.service(),
 
   appController: computed(function() {
-    return this.container.lookup('controller:application');
+    return getOwner(this).lookup('controller:application');
   }),
 
   compute([error]) {

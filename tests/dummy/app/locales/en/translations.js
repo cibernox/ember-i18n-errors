@@ -6,4 +6,4 @@ export default {
       blank: "email can't be blank"
     }
   }
-}
+};
