@@ -7,6 +7,7 @@ It adds to your app a handy helper `{{t-error error}}` for translating errors in
 the current route, but also takes advantage of Ember's route nesting to lookup translations in fallback on 
 parent routes.
 
+Using ember-intl?  See: [ember-intl-errors](https://github.com/Mifrill/ember-intl-errors)
 
 ## Installation
 
